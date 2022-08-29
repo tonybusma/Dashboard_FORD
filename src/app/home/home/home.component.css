@@ -1,0 +1,30 @@
+body{
+  height: 500px;
+}
+
+#container{
+  padding-left: 380px;
+}
+
+.card{
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin-top: 60px;
+  width: 550px;
+  height: 480px;
+  opacity: 90%;
+}
+
+.card-header{
+  color: rgb(73, 73, 73);
+  font-size: 15px;
+  font-weight: bolder;
+}
+
+.body-div{
+  display: flex;
+  align-items: center;
+}
+
+.card-text{
+  font-size: 18px;
+}

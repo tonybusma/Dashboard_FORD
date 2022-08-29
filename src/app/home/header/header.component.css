@@ -1,0 +1,43 @@
+.fa-user-circle{
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.fa-bars{
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.img-logo{
+  max-width: 30%;
+}
+
+.card-header{
+  background-color: rgb(219, 219, 219);
+  border: 0;
+  height: 55px;
+  max-width: 350px;
+  border: 0;
+  margin: 0;
+  padding: 15px 0 0 10px;
+  cursor: pointer;
+}
+
+.card-header:hover{
+  background-color: rgb(205, 205, 205);
+  border-style:solid;
+  border-left-width: 1px;
+  border-left-color: rgb(252, 111, 111);
+}
+
+.text-bar{
+  text-decoration: none;
+  font-weight: bold;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: rgb(8, 168, 8);
+}
+
+.logo-header{
+  background-color: white;
+  margin: 5px;
+}

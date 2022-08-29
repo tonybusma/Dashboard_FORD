@@ -1,0 +1,76 @@
+<h5 id="title-form" class="text-center mb-5">Boas-vindas</h5>
+
+<form
+  id="formgroup"
+  class="form-group mt-4"
+  (ngSubmit)="login()"
+  #formLogin="ngForm"
+>
+  <div class="input-group">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1"
+        ><i class="fa fa-user"></i
+      ></span>
+    </div>
+    <input
+      type="text"
+      class="form-control"
+      placeholder="Insira seu e-mail"
+      [(ngModel)]="user"
+      name="user"
+      aria-label="user"
+      aria-describedby="basic-addon1"
+      #userField="ngModel"
+      required
+    />
+  </div>
+  <app-message
+    *ngIf="userField.invalid && userField.touched"
+    message="Usuário obrigatório"
+  ></app-message>
+  <div class="input-group mt-4">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1"
+        ><i class="fa fa-lock"></i
+      ></span>
+    </div>
+    <input
+      type="password"
+      class="form-control"
+      placeholder="Insira sua senha"
+      [(ngModel)]="password"
+      name="password"
+      aria-label="password"
+      aria-describedby="basic-addon1"
+      #passwordField="ngModel"
+      required
+    />
+  </div>
+  <app-message
+    *ngIf="passwordField.invalid && passwordField.touched"
+    message="Senha obrigatória"
+  ></app-message>
+  <div class="row">
+    <div class="col-10 d-flex align-items-center justify-content-end">
+      <label class="labelcheck mt-3">Logar automaticamente</label>
+    </div>
+    <div
+      id="container"
+      class="col-2 mt-3 d-flex align-items-center justify-content-end"
+    >
+      <label class="switch">
+        <div class="switch-wrapper">
+          <input type="checkbox" name="auto-login"/>
+          <span class="switch-button"></span>
+        </div>
+      </label>
+    </div>
+  </div>
+  <button
+    type="submit"
+    class="btn btn-primary w-100 mt-3"
+    [disabled]="formLogin.invalid"
+  >
+    Entrar
+  </button>
+</form>

@@ -1,0 +1,29 @@
+#car-img{
+  opacity: 70%;
+  padding-top: 150px;
+}
+
+#logo-img{
+  max-width: 38%;
+  padding-top: 30px;
+}
+
+.col{
+  height: 100vh;
+}
+
+#form-login{
+  padding: 120px 50px 0px 50px;
+}
+
+.row{
+  max-width: 100%;
+}
+
+.col-right {
+  background-color: rgb(223, 223, 223);
+}
+
+
+
+

@@ -1,0 +1,29 @@
+<header class="sticky-top">
+  <nav class="navbar navbar-light bg-white">
+    <i class="fa fa-bars mr-2" (click)="menu.menuOpen()"></i>
+    <app-menu #menu>
+      <div class="logo-header">
+        <img
+          class="img-logo"
+          src="assets/img/ford.png"
+          alt="Imagem da logo da Ford"
+        />
+      </div>
+      <ul class="list-unstyled">
+        <a class="text-bar" [routerLink]="['/home']">
+          <div class="card-header">
+            <li>Home</li>
+          </div>
+        </a>
+        <a class="text-bar" [routerLink]="['/dashboard']">
+          <div class="card-header">
+            <li>Dashboard</li>
+          </div>
+        </a>
+      </ul>
+    </app-menu>
+    <div *ngIf="user$ | async as user">
+      <a (click)="logout()"><i class="fa fa-user-circle mr-1"></i></a>
+    </div>
+  </nav>
+</header>
